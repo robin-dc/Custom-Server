@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <a href="/" class="back">Go Back</a>
+    <div class="center">
+        <h1>CREATE NEW PRODUCT</h1>
+        <form action="/product" method="POST" class="center">
+            <label>Product Name:
+                <input type="text" placeholder="Enter product name." name="name">
+            </label>
+            <label>Category:
+                <input type="text" placeholder="Enter product category." name="category">
+            </label>
+            <label>Description:
+                <input type="text" placeholder="Enter product description." name="description">
+            </label>
+            <button type="submit">CREATE</button>
+        </form>
+    </div>
+</body>
+</html>

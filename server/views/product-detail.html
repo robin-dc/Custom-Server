@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <a href="/products" class="back">Go Back</a>
+    <div class="center">
+        <h1>#{name}</h1>
+        <small>Product ID: #{id} , <span>Category: #{category}</span></small>
+        <p>#{description}</p>
+        <form action="/products/#{id}/review" method="POST">
+            <input type="text" placeholder="Add review here." name="review" style="margin-top: 2rem; width:100%">
+            <button type="submit" style="margin-top: 3px;">SUBMIT REVIEW</button>
+        </form>
+
+        <ul class="center">
+            <h3>REVIEWS:</h3>
+            #{reviews}
+        </ul>
+    </div>
+</body>
+</html>
